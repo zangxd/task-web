@@ -4,10 +4,15 @@
  * @description: index页面对应的入口js文件
  */
 
+
  import 'angular';
  import 'angular-ui-router';
 
+ import '../../css/lib/font-awesome/css/font-awesome.min.css';
  import '../../css/common/style.css';
+ import '../../css/common/skins/_all-skins.css';
+
+
 
  import Nav from '../components/nav/nav';
  import Route from './route/route';
