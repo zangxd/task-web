@@ -1,0 +1,33 @@
+<h1 class="page-header">Service&Provider</h1>
+
+<div class="panel panel-primary" ng-controller="loadDataCtrl">
+  <div class="panel-heading">
+    <div class="panel-title">$http service</div>
+  </div>
+  <div class="panel-body">
+    <ul>
+      <li ng-repeat="user in userList">
+        {{user.name}}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="panel panel-primary" ng-controller="serviceCtrl">
+  <div class="panel-heading">
+    <div class="panel-title">封装自己的service</div>
+  </div>
+  <div class="panel-body">
+    <div class="form-group">
+      <label class="col-sm-2 control-label">用户名:</label>
+      <div class="col-sm-10">
+        <input name="username" class="form-control" ng-model="username" />
+      </div>
+    </div>
+    <div class="form-group">
+      <blockquote ng-show="username">
+        {{userList}}
+      </blockquote>
+    </div>
+  </div>
+</div>

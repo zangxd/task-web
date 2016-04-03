@@ -1,16 +1,24 @@
-//引入css
-require("../../css/lib/reset.css");
-require("../../css/common/global.css");
-require("../../css/common/grid.css");
-require("../../css/page/index.less");
+/**
+ * @Author:      xd.zang
+ * @DateTime:    2016-03-24
+ * @description: index页面对应的入口js文件
+ */
 
+ import 'angular';
+ import 'angular-ui-router';
 
-$('.g-bd').append('<p class="text">这是由js生成的一句话。</p>');
+ import '../../css/common/style.css';
 
-//增加事件
-$('.btn').click(function() {
-	require.ensure(['../components/dialog/index.js'], function(require) {
-		var Dialog = require('../components/dialog/index.js');
-		new Dialog();
-	});
-});
+ import Nav from '../components/nav/nav';
+ import Route from './route/route';
+ import Directive from './directive/directive';
+ import Service from './service/service';
+ import Filter from './filter/filter';
+
+ var App  = angular.module('AngularApp', [
+     Nav.name,
+     Route.name,
+     Directive.name,
+     Service.name,
+     Filter.name
+ ]);

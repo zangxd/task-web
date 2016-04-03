@@ -1,0 +1,84 @@
+<!-- <p>
+  <h1>directive</h1>
+</p>
+<div ng-controller="directiveCtrl">
+  <ul>
+    <li ng-repeat = "show in list" ng-class="{subscribe:show.subscribe}">
+      <input type="checkbox"  ng-model="show.subscribe">
+      {{show.title}}
+      <span class="glyphicon glyphicon-unchecked" ng-hide="show.subscribe"></span>
+      <span class="glyphicon glyphicon-check" ng-show="show.subscribe"></span>
+    </li>
+  </ul>
+</div> -->
+<h1 class="page-header">指令</h1>
+
+<div class="container bg-primary">
+  <h3>restic配置:"AEMC"</h3>
+  <hi>transclude</hi>
+  <div hi></div>
+  <div class="hi"></div>
+  <!-- directive:hi -->
+</div>
+<br>
+<div class="container bg-success">
+  <h3>指令复用</h3>
+  <div ng-controller="directiveCtrl">
+    <loader howToLoad="loadData()">滑动加载</loader>
+  </div>
+  <div ng-controller="directiveCtrl2">
+    <loader howToLoad="loadData2()">滑动加载</loader>
+  </div>
+</div>
+<br>
+<br>
+<div class="container bg-info">
+  <h3>指令间相互调用</h3>
+  <div class="row">
+    <div class="col-md-3">
+      <superman strength>动感超人---力量</superman>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <superman strength speed>动感超人2---力量+敏捷</superman>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <superman strength speed light>动感超人3---力量+敏捷+发光</superman>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="container bg-warning">
+  <h3>scope的绑定策略</h3>
+  <div ng-controller="scopeCtrl">
+    <p>
+      <span>@</span>
+      <drink flavor="{{ctrlFlavor}}"></drink>
+    </p>
+    <p>
+      <span>=</span> Ctrl:
+      <input type="text" ng-model="ctrlFlavor"> Directive:
+      <drink2 flavor="ctrlFlavor"></drink2>
+    </p>
+    <p>
+      <span>&</span>
+      <greeting greet="sayHello(name)"></greeting>
+      <greeting greet="sayHello(name)"></greeting>
+      <greeting greet="sayHello(name)"></greeting>
+    </p>
+  </div>
+</div>
+<br>
+
+<div class="container bg-danger">
+  <h3>自定义指令</h3>
+  <div ng-controller="customDirecCtrl">
+    <expander class="expander" expander-title="title">
+      {{text}}
+    </expander>
+  </div>
+</div>

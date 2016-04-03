@@ -1,0 +1,33 @@
+<h1 class="page-header">filter</h1>
+
+<div class="panel panel-primary" ng-controller="loadDataCtrl">
+  <div class="panel-heading">
+    <div class="panel-title">常用的</div>
+  </div>
+  <div class="panel-body">
+    <div ng-controller="filterCtrl">
+      <input class="form-control" type="number" ng-model="limitNum">
+      <input class="form-control" type="text" ng-model="filterName" placeholder="请输入标题">
+      <ul>
+        <li ng-repeat = "show in list | limitTo:limitNum | filter:{title:filterName}" ng-class="{subscribe:show.subscribe}">
+          <input type="checkbox" ng-model="show.subscribe">
+          <<{{show.title}}>> 更新于 {{show.updated*1000 | date:'yyyy-MM-dd HH:ss:sss'}}
+          <!--<span class="glyphicon glyphicon-unchecked" ng-hide="show.subscribe"></span>
+          <span class="glyphicon glyphicon-check" ng-show="show.subscribe"></span>-->
+        </li>
+      </ul>
+    </div>
+    <p>
+      {{1304375956789 | date}}
+    </p>
+    <p>
+      {{1304375956789 | date:"MM/dd/yyyy @ h:mma"}}
+    </p>
+    <p>
+      {{1304375956789 | date:"yyyy-MM-dd hh:mm:ss"}}
+    </p>
+    <p>
+      {{'zangxd  ' | filterCustom}}
+    </p>
+  </div>
+</div>

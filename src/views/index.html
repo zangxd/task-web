@@ -1,24 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="AngularApp">
 <head>
 	<meta charset="UTF-8">
 	<title>首页</title>
-	<meta name="description" content="基于webpack的前端工程化开发解决方案探索"/>
-	<!--
-        描述：head中无需再引入css以及facicon，webpack将根据入口JS文件的要求自动实现按需加载或者生成style标签
-    -->
+	  <meta name="description" content="angular learn"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="//cdn.bootcss.com/angular.js/1.2.29/angular.js"></script>
+    <![endif]-->
+
 </head>
+
 <body>
-	<div class="g-hd"></div>
-	<div class="g-bd">
-		<input type="button" value="弹窗" class="btn">
-		<p class="img">
-			<img src="../img/4.png" alt="">
-		</p>
+<!--[if lt IE 9]>
+<div class="alert alert-warning text-center">提醒：古董浏览器。。。
+    <a href="http://browsehappy.com/" target=_blank>速速点击换一个</a>！
+</div>
+<![endif]-->
+
+	<!--header container start-->
+	<header class="header-container">
+	  <h4>This is lean angular notes</h4>
+	</header>
+	<!--header container end-->
+
+	<!-- main container start-->
+	<div class="main-container">
+		<!--nav start-->
+	  <aside class="nav-container">
+	    <nav></nav>
+	  </aside>
+	  <section class="content-container">
+	    <aside ui-view="app"></aside>
+	  </section>
+		<!--nav end-->
 	</div>
-	<div class="g-ft"></div>
-	<!--
-        描述：body中同样无需单独引入JS文件，webpack会根据入口JS文件自动实现按需加载或者生成script标签，还可以生成对应的hash值
-    -->
+	<!-- main container start-->
+
 </body>
+
 </html>
