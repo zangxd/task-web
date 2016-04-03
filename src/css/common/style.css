@@ -42,7 +42,7 @@ h6,
 /* General Links */
 a {
     color: #2a99e3;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:hover,
@@ -498,47 +498,92 @@ body.hold-transition .main-header .logo {
 
 
 /*********** 任务田 start **************/
+
+.main-sidebar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 230px;
+  z-index: 810;
+  -webkit-transition: -webkit-transform .3s ease-in-out,width .3s ease-in-out;
+  -moz-transition: -moz-transform .3s ease-in-out,width .3s ease-in-out;
+  -o-transition: -o-transform .3s ease-in-out,width .3s ease-in-out;
+  transition: transform .3s ease-in-out,width .3s ease-in-out;
+}
+.content-wrapper{
+    min-height: 100%;
+    background-color: #ecf0f5;
+    z-index: 800;
+    -webkit-transition: -webkit-transform .3s ease-in-out,margin .3s ease-in-out;
+    -moz-transition: -moz-transform .3s ease-in-out,margin .3s ease-in-out;
+    -o-transition: -o-transform .3s ease-in-out,margin .3s ease-in-out;
+    transition: transform .3s ease-in-out,margin .3s ease-in-out;
+    margin-left: 230px;
+    z-index: 820;
+}
+
+.text-red {
+    color: #dd4b39 !important
+}
+
+.text-yellow {
+    color: #f39c12 !important
+}
+
+.text-aqua {
+    color: #00c0ef !important
+}
+
+.text-blue {
+    color: #0073b7 !important
+}
+
+.text-black {
+    color: #111 !important
+}
+
+.text-light-blue {
+    color: #3c8dbc !important
+}
+
+.text-green {
+    color: #00a65a !important
+}
+
+.text-gray {
+    color: #d2d6de !important
+}
+
+.text-navy {
+    color: #001f3f !important
+}
+
+.text-teal {
+    color: #39cccc !important
+}
+
+.text-olive {
+    color: #3d9970 !important
+}
+
+.text-lime {
+    color: #01ff70 !important
+}
+
+.text-orange {
+    color: #ff851b !important
+}
+
+.text-fuchsia {
+    color: #f012be !important
+}
+
+.text-purple {
+    color: #605ca8 !important
+}
+
+.text-maroon {
+    color: #d81b60 !important
+}
 /*********** 任务田 end**************/
-
-
-.header-container{
-  color: #626262;
-  border-bottom: 1px solid #626262;
-  padding: 10px 20px;
-}
-.nav-container{
-  position: fixed;
-  float: left;
-  width: 210px;
-  white-space: nowrap;
-  background-color: #fff;
-}
-.content-container{
-    padding: 15px;
-    min-height: 486px;
-    background-color: #fff;
-    -webkit-box-shadow: 2px 0 1px rgb(226,229,229) inset;
-    -moz-box-shadow: 2px 0 1px rgb(226,229,229) inset;
-    box-shadow: 2px 0 1px rgb(226,229,229) inset;
-    margin-left: 210px;
-}
-
-.container > header {
-  margin: 0 auto;
-  padding: 10em 0em;
-  text-align: center;
-}
-.container > header h1 {
-  font-size: 70px;
-  margin: 0;
-  font-weight: bold;
-  font-family: 'Open Sans', Arial, sans-serif;
-  color: #212122;
-}
-.container > header span {
-  display: block;
-  font-size: 30px;
-  color: #89949A;
-  font-family: 'Open Sans', Arial, sans-serif;
-  width: 100%;
-}

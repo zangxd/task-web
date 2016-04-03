@@ -7,6 +7,7 @@
 
  import 'angular';
  import 'angular-ui-router';
+ //import 'angular-ui-bootstrap';
 
  import '../../css/lib/font-awesome/css/font-awesome.min.css';
  import '../../css/common/style.css';
@@ -20,10 +21,14 @@
  import Service from './service/service';
  import Filter from './filter/filter';
 
+
+  import Sidebar from '../components/sidebar/sidebar';
+
  var App  = angular.module('AngularApp', [
      Nav.name,
      Route.name,
      Directive.name,
      Service.name,
-     Filter.name
+     Filter.name,
+     Sidebar.name
  ]);
