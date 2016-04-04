@@ -20,7 +20,7 @@
 }
 .tl-list{
   margin: 0;
-  padding:0px 0px 0px 10px;
+  padding:0px 10px 0px 10px;
 }
 .tl-item{
     list-style: none;
@@ -32,4 +32,13 @@
 .tl-item>.pull-left>span,.tl-item>.pull-right>span{
   display: inline-block;
   margin-left: 10px;
+}
+.tl-item>.pull-right>span.watchtask,.tl-item>.pull-right>span.marktask{
+  display: none;
+}
+.tl-list:hover{
+  background-color: #f0f0f0;
+}
+.tl-item:hover>.pull-right>span.watchtask,.tl-item:hover>.pull-right>span.marktask{
+  display: inline-block;
 }
