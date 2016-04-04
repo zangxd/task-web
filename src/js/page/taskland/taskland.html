@@ -1,34 +1,48 @@
 <div class="content" ng-controller="collapseCtrl">
   <div class="panel-tl">
-      <div class="panel-tl-heading">
-          <h4 class="tl-title text-red" ng-click="delayList = !delayList">已经延期
-            <span class="fa fa-angle-right" ng-hide="delayList"></span>
-            <span class="fa fa-angle-down" ng-show="delayList"></span>
-          </h4>
-      </div>
-      <ul class="panel-tl-body" uib-collapse="delayList">
-        li
+    <div class="panel-tl-heading">
+      <h4 class="tl-title text-red" ng-click="delayList = !delayList">已经延期(4)
+        <span class="fa fa-angle-right" ng-hide="delayList"></span>
+        <span class="fa fa-angle-down" ng-show="delayList"></span>
+      </h4>
+    </div>
+    <ul class="panel-tl-body tl-list" uib-collapse="delayList">
+      <li class="tl-item">
+          <div class="pull-left">
+            <span class="sn">1</span>
+            <!-- <span class="fa fa-plus-square-o"></span>
+            <span class="fa fa-minus-square-o"></span> -->
+            <span class="name">任务名称</span>
+          </div>
+          <div class="pull-right">
+            <span class="createtime">2016-03-03</span>
+            <span class=""><i class="fa fa-star-o"></i> 关注<span>
+            <!-- <span class=""><i class="fa fa-star"></i> 取消关注<span> -->
+            <span class=""><i class="fa fa-square-o"></i> 标记完成<span>
+            <!-- <span class=""><i class="fa fa-check-square-o"></i> 标记未完成<span> -->
+          </div>
+        </li>
       </ul>
   </div>
   <div class="panel-tl">
       <div class="panel-tl-heading">
-          <h4 class="tl-title text-aqua" ng-click="duetodayList = !duetodayList">今天到期
+          <h4 class="tl-title text-aqua" ng-click="duetodayList = !duetodayList">今天到期(4)
             <span class="fa fa-angle-right" ng-hide="duetodayList"></span>
-            <span class="fa fa-angle-down" ng-show="duetodayList"></span>
+          <span class="fa fa-angle-down" ng-show="duetodayList"></span>
           </h4>
-      </div>
-      <ul class="panel-tl-body" uib-collapse="duetodayList">
+        </div>
+        <ul class="panel-tl-body" uib-collapse="duetodayList">
           Panel content
-      </ul>
+        </ul>
   </div>
   <div class="panel-tl">
-      <div class="panel-tl-heading">
-          <h4 class="tl-title text-yellow" ng-click="otherdueList = !otherdueList">其它到期
-            <span class="fa fa-angle-right" ng-hide="otherdueList"></span>
-            <span class="fa fa-angle-down" ng-show="otherdueList"></span>
-          </h4>
-      </div>
-      <ul class="panel-tl-body" uib-collapse="otherdueList">
-          Panel content
-      </ul>
+    <div class="panel-tl-heading">
+      <h4 class="tl-title text-yellow" ng-click="otherdueList = !otherdueList">其它到期(4)
+        <span class="fa fa-angle-right" ng-hide="otherdueList"></span>
+        <span class="fa fa-angle-down" ng-show="otherdueList"></span>
+      </h4>
+    </div>
+    <ul class="panel-tl-body" uib-collapse="otherdueList">
+      Panel content
+    </ul>
   </div>
