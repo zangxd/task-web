@@ -23,8 +23,12 @@
  import Filter from './filter/filter';
 
 
+
  import Sidebar from '../components/sidebar/sidebar';
  import Topnav from '../components/topnav/topnav';
+
+ import Taskland from './taskland/taskland';
+
 
  var App  = angular.module('AngularApp', [
      Nav.name,
@@ -33,5 +37,6 @@
      Service.name,
      Filter.name,
      Sidebar.name,
-     Topnav.name
+     Topnav.name,
+     Taskland.name
  ]);

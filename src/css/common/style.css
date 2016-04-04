@@ -513,7 +513,7 @@ body.hold-transition .main-header .logo {
 }
 .content-wrapper{
     min-height: 100%;
-    background-color: #ecf0f5;
+    /*background-color: #e9e9e9;*/
     z-index: 800;
     -webkit-transition: -webkit-transform .3s ease-in-out,margin .3s ease-in-out;
     -moz-transition: -moz-transform .3s ease-in-out,margin .3s ease-in-out;

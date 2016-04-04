@@ -11,15 +11,12 @@ topnav.controller('topnavCtrl', ['$scope', function ($scope) {
 }]);
 
 topnav.controller('dropDownCtrl', ['$scope', function ($scope,$log) {
-
   $scope.status = {
     isopen: false
   };
-
   $scope.toggled = function(open) {
     $log.log('Dropdown is now: ', open);
   };
-
   $scope.toggleDropdown = function($event) {
     $event.preventDefault();
     $event.stopPropagation();
