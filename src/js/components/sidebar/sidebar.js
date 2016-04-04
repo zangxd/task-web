@@ -1,7 +1,7 @@
 /**
  * @Author:      xd.zang
  * @DateTime:    2016-04-03
- * @description: nav指令配置
+ * @description: 左边菜单指令配置
  */
 
 import './sidebar.css';

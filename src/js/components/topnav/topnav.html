@@ -1,0 +1,106 @@
+<aside class="top-nav" controller="dropDownCtrl">
+
+  <!-- <ul class="nav-left  list-unstyled">
+    <li uib-dropdown on-toggle="toggled(open)">
+      <a href="javascript:;" uib-dropdown-toggle>
+        进行中 <span class="caret"></span>
+      </a>
+      <ul  uib-dropdown-menu  role="menu"  aria-labelledby="simple-dropdown">
+          <li role="menuitem"><a href="javascript:;">进行中</a></li>
+          <li class="dropdown-submenu">
+              <a  href="javascript:;">已完成</a>
+              <ul class="dropdown-menu">
+                  <li role="menuitem"><a href="javascript:;">今天</a></li>
+                  <li role="menuitem"><a href="javascript:;">昨天</a></li>
+                  <li role="menuitem"><a href="javascript:;">本周</a></li>
+                  <li role="menuitem"><a href="javascript:;">本月</a></li>
+              </ul>
+          </li>
+          <li role="menuitem"><a href="javascript:;">按最近更新</a></li>
+          <li role="menuitem"><a href="javascript:;">按紧急程度</a></li>
+          <li role="menuitem"><a href="javascript:;">按到期日期</a></li>
+          <li role="menuitem"><a href="javascript:;">按任务类别</a></li>
+          <li class="divider"></li>
+          <li role="menuitem"><a href="javascript:;">高级查看</a></li>
+      </ul>
+    </li>
+  </ul> -->
+
+  <ul class="nav-left list-unstyled list-inline">
+    <li><a href="javascript:;"><span class="fa fa-angle-left"></span>返回快速查看</a></li>
+    <li uib-dropdown on-toggle="toggled(open)">
+      <a href="javascript:;" uib-dropdown-toggle>
+        进行中 <span class="caret"></span>
+      </a>
+      <ul uib-dropdown-menu role="menu" aria-labelledby="simple-dropdown">
+        <li role="menuitem"><a href="javascript:;">已完成</a></li>
+        <li role="menuitem"><a href="javascript:;">进行中</a></li>
+        <li role="menuitem"><a href="javascript:;">全部</a></li>
+      </ul>
+    </li>
+    <li uib-dropdown on-toggle="toggled(open)">
+      <a href="javascript:;" uib-dropdown-toggle>
+        进行中 <span class="caret"></span>
+      </a>
+      <ul uib-dropdown-menu role="menu" aria-labelledby="simple-dropdown">
+        <li role="menuitem"><a href="javascript:;">按到期日期</a></li>
+        <li role="menuitem"><a href="javascript:;">按最近更新</a></li>
+        <li role="menuitem"><a href="javascript:;">按名称A-Z</a></li>
+        <li role="menuitem"><a href="javascript:;">按创建日期</a></li>
+        <li role="menuitem"><a href="javascript:;">按负责人</a></li>
+      </ul>
+    </li>
+
+    <li ng-controller="CollapseDemoCtrl">
+      <a href="javascript:;" ng-click="isCollapsed = !isCollapsed">
+        筛选 <span class="caret"></span>
+      </a>
+      <div uib-collapse="isCollapsed" class="collapse-panel panel panel-default">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-sm-12">
+              <form class="form-horizontal ng-pristine ng-valid" role="form">
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">负责人</label>
+                  <div class="col-sm-10">
+                    <input class="form-control" placeholder="负责人">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">到期日</label>
+                  <div class="col-sm-4">
+                    <input class="form-control">
+                  </div>
+                  <div class="col-sm-1">-</div>
+                  <div class="col-sm-4">
+                    <input class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">任务类型</label>
+                  <div class="col-sm-10">
+                    <select class="form-control">
+                      <option>全部任务</option>
+                      <option>告警处理</option>
+                      <option>业务目标</option>
+                      <option>营销待办</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-success">确定</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </li>
+  </ul>
+  <div class="pull-right">
+    <a class="btn btn-block btn-info">添加任务</a>
+  </div>
+</aside>
