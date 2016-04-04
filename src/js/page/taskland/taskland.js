@@ -9,10 +9,11 @@
  let tasklandModule = angular.module('taskland', [
      'ui.router','ui.bootstrap'
    ])
-   .config(($stateProvider) => {
+   .config(($stateProvider, $urlRouterProvider) => {
+     $urlRouterProvider.otherwise('/');
      $stateProvider
        .state('taskland', {
-         url: '/taskland',
+         url: '/',
          views: {
            app: {
              templateUrl: './taskland/taskland.html'
