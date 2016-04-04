@@ -1,34 +1,34 @@
 <div class="content" ng-controller="collapseCtrl">
-  <div class="panel panel-primary">
-      <div class="panel-heading">
-          <h3 class="panel-title" ng-click="delayList = !delayList">已经延期
+  <div class="panel-tl">
+      <div class="panel-tl-heading">
+          <h4 class="tl-title text-red" ng-click="delayList = !delayList">已经延期
             <span class="fa fa-angle-right" ng-hide="delayList"></span>
             <span class="fa fa-angle-down" ng-show="delayList"></span>
-          </h3>
+          </h4>
       </div>
-      <div class="panel-body" uib-collapse="delayList">
-
-      </div>
+      <ul class="panel-tl-body" uib-collapse="delayList">
+        li
+      </ul>
   </div>
-  <div class="panel panel-success">
-      <div class="panel-heading">
-          <h3 class="panel-title" ng-click="duetodayList = !duetodayList">今天到期
+  <div class="panel-tl">
+      <div class="panel-tl-heading">
+          <h4 class="tl-title text-aqua" ng-click="duetodayList = !duetodayList">今天到期
             <span class="fa fa-angle-right" ng-hide="duetodayList"></span>
             <span class="fa fa-angle-down" ng-show="duetodayList"></span>
-          </h3>
+          </h4>
       </div>
-      <div class="panel-body" uib-collapse="duetodayList">
+      <ul class="panel-tl-body" uib-collapse="duetodayList">
           Panel content
-      </div>
+      </ul>
   </div>
-  <div class="panel panel-info">
-      <div class="panel-heading">
-          <h3 class="panel-title" ng-click="otherdueList = !otherdueList">其它到期
+  <div class="panel-tl">
+      <div class="panel-tl-heading">
+          <h4 class="tl-title text-yellow" ng-click="otherdueList = !otherdueList">其它到期
             <span class="fa fa-angle-right" ng-hide="otherdueList"></span>
             <span class="fa fa-angle-down" ng-show="otherdueList"></span>
-          </h3>
+          </h4>
       </div>
-      <div class="panel-body" uib-collapse="otherdueList">
+      <ul class="panel-tl-body" uib-collapse="otherdueList">
           Panel content
-      </div>
+      </ul>
   </div>

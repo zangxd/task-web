@@ -1,0 +1,20 @@
+.panel-tl{
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #d5d5d5;
+}
+.panel-tl-heading{
+  padding: 10px 15px 10px 0px;
+}
+
+.tl-title{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+
+}
+.panel-tl-body{
+
+}
