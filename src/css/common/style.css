@@ -513,6 +513,7 @@ body.hold-transition .main-header .logo {
 }
 .content-wrapper{
     min-height: 100%;
+    background-color: #fff;
     /*background-color: #e9e9e9;*/
     z-index: 800;
     -webkit-transition: -webkit-transform .3s ease-in-out,margin .3s ease-in-out;
@@ -521,6 +522,9 @@ body.hold-transition .main-header .logo {
     transition: transform .3s ease-in-out,margin .3s ease-in-out;
     margin-left: 230px;
     z-index: 820;
+}
+.content-wrapper section div.content{
+  padding-top: 15px;
 }
 
 .text-red {

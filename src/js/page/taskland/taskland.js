@@ -23,7 +23,9 @@
    });
 
  tasklandModule.controller('collapseCtrl', ($scope) => {
-    $scope.isCollapsed = true;
+    $scope.delayList = false;
+    $scope.duetodayList = false;
+    $scope.otherdueList = false;
  });
 
  export default tasklandModule;

@@ -1,25 +1,25 @@
 <div class="content" ng-controller="collapseCtrl">
   <div class="panel panel-primary">
       <div class="panel-heading">
-          <h3 class="panel-title" ng-click="isCollapsed = !isCollapsed">已经延期</h3>
+          <h3 class="panel-title" ng-click="delayList = !delayList">已经延期</h3>
       </div>
-      <div class="panel-body" uib-collapse="isCollapsed">
+      <div class="panel-body" uib-collapse="delayList">
 
       </div>
   </div>
   <div class="panel panel-success">
       <div class="panel-heading">
-          <h3 class="panel-title" ng-click="isCollapsed = !isCollapsed">今天到期</h3>
+          <h3 class="panel-title" ng-click="duetodayList = !duetodayList">今天到期</h3>
       </div>
-      <div class="panel-body" uib-collapse="isCollapsed">
+      <div class="panel-body" uib-collapse="duetodayList">
           Panel content
       </div>
   </div>
   <div class="panel panel-info">
       <div class="panel-heading">
-          <h3 class="panel-title" ng-click="isCollapsed = !isCollapsed">其它到期</h3>
+          <h3 class="panel-title" ng-click="otherdueList = !otherdueList">其它到期</h3>
       </div>
-      <div class="panel-body" uib-collapse="isCollapsed">
+      <div class="panel-body" uib-collapse="otherdueList">
           Panel content
       </div>
   </div>
