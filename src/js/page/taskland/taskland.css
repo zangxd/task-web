@@ -1,62 +1,101 @@
-.panel-tl{
+/**panel-tl**/
+.panel-tl {
   margin-bottom: 10px;
   background-color: #fff;
 }
-.panel-tl-heading{
+.panel-tl-heading {
   padding: 10px 15px 10px 0px;
 }
-
-.tl-title{
+.tl-title {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
-  font-weight: 400;
   color: inherit;
+  font-weight: 400;
+}
+.panel-tl-body {}
+
+/**tl-list**/
+.panel-tl ul,.panel-tl ol{
+  padding:0;
+}
+
+.tl-list {
+  margin: 0;
+  padding: 0px;
+  border: 1px solid #eee;
+}
+
+.tl-list:after{
+  clear: both;
+  display: block;
+  content: "";
+  height: 0;
+}
+
+.tl-list-item{
+  list-style: none;
+  min-height: 44px;
+  line-height: 44px;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+.tl-list-item:last-child{
+  border-bottom: 0;
 
 }
-.panel-tl-body{
-}
-.tl-list{
-  margin: 0;
-  padding:0px;
-  border:1px solid #eee;
-}
-.tl-item{
-    list-style: none;
-    height: 44px;
-    line-height: 44px;
-    cursor: pointer;
-    position: relative;
-    padding:0px 10px;
-    border-bottom: 1px solid #eee;
-}
-.tl-item:last-child{
-  border-bottom: 0px;
-}
-.tl-item>.pull-left>span,.tl-item>.pull-right>span{
-  display: inline-block;
-  padding:0px 10px;
-}
-.tl-item>.pull-right>span.iswatch,
-.tl-item>.pull-right>span.isfinish{
-  display: none;
-}
-.tl-item:hover{
+
+.tl-item-par:hover{
   background-color: #eee;
 }
-.tl-item:hover>.pull-right>span.iswatch,
-.tl-item:hover>.pull-right>span.isfinish{
-  display: inline-block;
+.tl-item-par{
+  padding: 0px 10px;
+  width: 100%;
 }
-.tl-item:hover>.pull-right>span.createtime{
-  display: none;
+.tl-item-sub .tl-item-par {
+  padding-left: 50px !important;
 }
-.tl-item span.name{
+.tl-item-sub .tl-item-sub .tl-item-par{
+  padding-left: 70px !important;
+}
+
+.tl-item-sub{
+  width: 100%;
+}
+.tl-item-sub:after,.tl-item-par:after{
+  clear: both;
+  display: block;
+  content: "";
+  height: 0;
+}
+
+.tl-item-par .tlname {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-
-
+  max-width: 40em;
   display: inline-block;
-      vertical-align: top;
+  vertical-align: top;
+}
+.tl-item-par span{
+  display: inline-block;
+  padding: 0px 6px;
+}
+.tl-item-par .iswatch, .tl-item-par .isfinish {
+  display: none;
+}
+.tl-item-par:hover .iswatch, .tl-item-par:hover .isfinish{
+  display: inline-block;
+}
+.tl-item-par:hover .createtime{
+  display: none;
+}
+.tl-item-par .tlname {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 40em;
+  display: inline-block;
+  vertical-align: top;
 }
