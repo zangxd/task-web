@@ -8,6 +8,7 @@
  import 'angular';
  import 'angular-ui-router';
  import 'angular-ui-bootstrap';
+ import 'angular-animate';
 
 
  import '../../css/lib/font-awesome/css/font-awesome.min.css';

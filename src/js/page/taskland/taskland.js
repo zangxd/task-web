@@ -7,7 +7,7 @@
  import './taskland.css';
 
  let tasklandModule = angular.module('taskland', [
-     'ui.router','ui.bootstrap'
+     'ui.router','ui.bootstrap','ngAnimate'
    ])
    .config(($stateProvider, $urlRouterProvider) => {
      $urlRouterProvider.otherwise('/');
