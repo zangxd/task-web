@@ -115,3 +115,10 @@
 .tl-item-par>span{
   color:#ccc;
 }
+
+.tl-modal:after{
+  clear: both;
+  display: block;
+  height: 0;
+  content: "";
+}

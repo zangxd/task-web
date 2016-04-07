@@ -523,7 +523,7 @@ body.hold-transition .main-header .logo {
     margin-left: 230px;
     z-index: 820;
 }
-.content-wrapper section div.content{
+.content-wrapper  section.content{
   padding-top: 15px;
 }
 

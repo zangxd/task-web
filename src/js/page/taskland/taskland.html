@@ -1,4 +1,5 @@
-<div class="content" ng-controller="collapseCtrl">
+<topnav></topnav>
+<section class="content" ng-controller="collapseCtrl">
   <div class="panel-tl">
     <div class="panel-tl-heading">
       <h4 class="tl-title text-red" ng-click="delayList = !delayList">已经延期(4)
@@ -170,3 +171,128 @@
       </ul>
     </div>
   </div>
+
+
+
+  <div class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title">Modal Default</h4>
+        </div>
+        <div class="modal-body">
+          <p>One fine body…</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tl-modal">
+    <div class="tl-modal-header">
+      <div class="tl-modal-title">
+        <h4>添加任务</h4>
+      </div>
+    </div>
+    <div class="tl-modal-body task-box" style="clear:both;">
+      <!-- <ul class="list-horizontal">
+        <li>
+          <label><i class="fa">图标区域</i></label>
+          <span>
+            <textarea class="form-control" row="" placeholder="一句话描述任务信息 ..."></textarea>
+          </span>
+        </li>
+        <li>
+          dl.
+        </li>
+      </ul> -->
+      <ul class="list-horizontal">
+        <li>
+          <label class="col-sm-2 control-label">任务名称</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" placeholder="一句话描述任务信息......">
+          </div>
+        </li>
+        <li>
+            <div class="col-sm-4">
+              <label class="col-sm-2 control-label">负责人</label>
+              <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="负责人">
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <label class="col-sm-2 control-label">到期日</label>
+              <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="负责人">
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <label class="col-sm-2 control-label">紧急程度</label>
+              <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="负责人">
+              </div>
+            </div>
+        </li>
+        <li>
+          <label class="col-sm-2 control-label">参与人员</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" placeholder="参与人......">
+          </div>
+        </li>
+        <li>
+          <label class="col-sm-2 control-label">任务描述</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+          </div>
+        </li>
+        <li>
+          <div class="panel-tl">
+            <div class="panel-tl-heading">
+              <h4 class="tl-title text-yellow" ng-click="otherdueList = !otherdueList">子任务
+                <span class="fa fa-angle-right" ng-hide="otherdueList"></span>
+                <span class="fa fa-angle-down ng-hide" ng-show="otherdueList"></span>
+              </h4>
+            </div>
+            <div class="panel-tl-body in collapse" uib-collapse="otherdueList" aria-expanded="true" aria-hidden="false" style="height: auto;">
+              <ul class="tl-list">
+                <li class="tl-list-item">
+                  <div class="tl-item-par">
+                    <span> 还没有其它到期的任务..... </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <label class="col-sm-2 control-label">起始日期</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" placeholder="起始日期......">
+          </div>
+        </li>
+        <li>
+          <div class="col-sm-3"><a href="javascript:;">添加子任务</a></div>
+          <div class="col-sm-3"><a href="javascript:;">起始日期</a></div>
+          <div class="col-sm-3"><a href="javascript:;">附件</a></div>
+          <div class="col-sm-3"><a href="javascript:;">提醒</a></div>
+        </li>
+
+
+      </ul>
+      <uib-tabset active="activeJustified" justified="true">
+        <uib-tab index="0" heading="Justified">Justified content</uib-tab>
+        <uib-tab index="1" heading="SJ">Short Labeled Justified content</uib-tab>
+        <uib-tab index="2" heading="Long Justified">Long Labeled Justified content</uib-tab>
+      </uib-tabset>
+
+
+
+    </div>
+  </div>
+
+</section>
