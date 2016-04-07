@@ -5,6 +5,7 @@
 }
 .panel-tl-heading {
   padding: 10px 15px 10px 0px;
+  border-bottom:1px solid #eee;
 }
 .tl-title {
   margin-top: 0;
@@ -13,8 +14,19 @@
   color: inherit;
   font-weight: 400;
 }
+.tl-title:hover{
+  cursor: pointer;
+}
 .panel-tl-body {}
-
+.panel-tl-footer:after{
+  clear: both;
+  display: block;
+  content: "";
+  height: 0;
+}
+.panel-tl-footer .pagination{
+  margin-bottom: 0px;
+}
 /**tl-list**/
 .panel-tl ul,.panel-tl ol{
   padding:0;
@@ -24,6 +36,7 @@
   margin: 0;
   padding: 0px;
   border: 1px solid #eee;
+  border-top:0px;
 }
 
 .tl-list:after{
@@ -98,4 +111,7 @@
   max-width: 40em;
   display: inline-block;
   vertical-align: top;
+}
+.tl-item-par>span{
+  color:#ccc;
 }
