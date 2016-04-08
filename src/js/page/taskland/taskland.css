@@ -7,7 +7,14 @@
   padding: 10px 15px 10px 0px;
   border-bottom:1px solid #eee;
 }
+.panel-tl-heading:after{
+  clear: both;
+  display: block;
+  content: "";
+  visibility: hidden;
+}
 .tl-title {
+  float: left;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
@@ -17,6 +24,20 @@
 .tl-title:hover{
   cursor: pointer;
 }
+.panel-tl-func{
+  float:right;
+}
+.panel-tl-func a{
+  display: inline-block;
+  color: #626262;
+  font-size: 12px;
+  border:1px solid #ececec;
+  padding: 6px;
+}
+.panel-tl-func a:hover{
+  background-color: #f5f5f5;
+}
+
 .panel-tl-body {}
 .panel-tl-footer:after{
   clear: both;
@@ -184,7 +205,7 @@
 .task-box-item .control-label{
   padding-top: 7px;
   margin-bottom: 0;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -203,6 +224,34 @@
     border-color: #d2d6de;
     background-color: #fff;
 }
+.task-box-item .col-sm-4 .col-sm-4{
+  padding-left: 0px;
+}
+.task-remind-info span,.task-remind-info select,.task-remind-info input{
+  display: inline-block;
+}
+.task-remind-info select{
+  width: auto;
+}
+.task-box .tl-title{
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.task-box-btn{
+  padding: 10px 0px;
+  text-align: center;
+  color: inherit;
+  border:1px solid #ccc;
+  border-right: 0px;
+}
+.task-box-btn-group .task-box-btn:last-child{
+  border-right: 1px solid #ccc;
+}
+.task-box-btn:hover{
+  color: inherit;
+  background-color: #f5f5f5;
+}
 .task-box-item .col-sm-1,
 .task-box-item .col-sm-2,
 .task-box-item .col-sm-3,
@@ -217,4 +266,7 @@
 .task-box-item .col-sm-12{
   padding-left: 5px;
   padding-right: 5px;
+}
+.task-box-content{
+  padding-top:10px;
 }
