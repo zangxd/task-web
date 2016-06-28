@@ -19,7 +19,40 @@
              templateUrl: './taskland/taskland.html'
            }
          }
-       });
+       })
+       .state('todoList', {
+         url: '/todoList',
+         views: {
+           app: {
+             templateUrl: './taskland/todoList.html'
+           }
+         }
+       })
+       .state('attentionList', {
+         url: '/attentionList',
+         views: {
+           app: {
+             templateUrl: './taskland/attentionList.html'
+           }
+         }
+       })
+       .state('partakeList', {
+         url: '/partakeList',
+         views: {
+           app: {
+             templateUrl: './taskland/partakeList.html'
+           }
+         }
+       })
+       .state('responsibleList', {
+         url: '/responsibleList',
+         views: {
+           app: {
+             templateUrl: './taskland/responsibleList.html'
+           }
+         }
+       })
+       ;
    });
 
  tasklandModule.controller('collapseCtrl', ($scope) => {
